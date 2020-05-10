@@ -1,4 +1,4 @@
-package search
+package search.list
 
 fun <T : Comparable<T>> binarySearchIterative(array: Array<T>, key: T): Int {
     var low = 0

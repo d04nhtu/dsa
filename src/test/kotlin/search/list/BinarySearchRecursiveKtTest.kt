@@ -1,8 +1,8 @@
-package search
+package search.list
 
 import org.junit.jupiter.api.Test
 
-import org.junit.jupiter.api.Assertions.*
+import search.list.binarySearchRecursive
 
 internal class BinarySearchRecursiveKtTest {
 
