@@ -6,9 +6,7 @@ fun <T : Comparable<T>> binarySearchRecursive(array: Array<T>, key: T): Int {
 
 fun <T : Comparable<T>> binarySearchRecursiveHelper(array: Array<T>, key: T, low: Int, high: Int): Int {
     return if (low == high) {
-        if (array[low] == key) {
-            low
-        } else -1
+        if (array[low] == key) low else -1
 
     } else {
         val mid = (low + high) / 2

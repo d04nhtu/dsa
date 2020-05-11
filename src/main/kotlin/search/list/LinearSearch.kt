@@ -6,5 +6,6 @@ fun <T : Comparable<T>> linearSearch(array: Array<T>, key: T): Int {
             return index
         }
     }
+
     return -1
 }
