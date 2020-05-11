@@ -1,15 +1,20 @@
 package sort
 
 fun <T : Comparable<T>> bubbleSort(array: Array<T>) {
-    val len = array.size - 1
+    val n = array.size - 1
 
-    for (i in 0 until len) {
-        for (j in 0 until len) {
+    for (i in 0..n) {
+        var swap = false
+
+        for (j in 0..(n - i)) {
             if (array[j + 1] < array[j]) {
                 val temp = array[j]
                 array[j] = array[j + 1]
                 array[j + 1] = temp
+                swap = true
             }
         }
+
+        if (!swap) break
     }
 }
