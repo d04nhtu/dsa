@@ -14,8 +14,16 @@ internal class BubbleSortKtTest {
         assertArrayEquals(array, arrayOf(0, 2, 3, 4, 5, 6, 7, 8, 9))
     }
 
+
     @Test
     fun bubbleSortKtTest2() {
+        val array = arrayOf(13, 7, 5, 9, -6)
+        bubbleSort(array)
+        assertArrayEquals(array, arrayOf(-6, 5, 7, 9, 13))
+    }
+
+    @Test
+    fun bubbleSortKtTest3() {
         val array = arrayOf("A", "F", "C", "G", "D", "B")
         bubbleSort(array)
         assertArrayEquals(array, arrayOf("A", "B", "C", "D", "F", "G"))
