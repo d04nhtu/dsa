@@ -1,7 +1,6 @@
 package search.list
 
 import org.junit.jupiter.api.Test
-import search.list.binarySearchIterative
 
 internal class BinarySearchIterativeKtTest {
 

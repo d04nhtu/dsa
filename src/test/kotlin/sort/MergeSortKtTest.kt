@@ -1,8 +1,7 @@
 package sort
 
+import org.junit.jupiter.api.Assertions.assertArrayEquals
 import org.junit.jupiter.api.Test
-
-import org.junit.jupiter.api.Assertions.*
 
 internal class MergeSortKtTest {
 

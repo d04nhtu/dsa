@@ -2,8 +2,6 @@ package search.list
 
 import org.junit.jupiter.api.Test
 
-import search.list.binarySearchRecursive
-
 internal class BinarySearchRecursiveKtTest {
 
     @Test
