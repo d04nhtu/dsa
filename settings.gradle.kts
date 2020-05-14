@@ -1,2 +1,2 @@
-rootProject.name = "dsa"
+rootProject.name = "kotlin_dsa"
 

@@ -1,4 +1,4 @@
-package sort
+package com.d04nhtu.sort
 
 fun <T : Comparable<T>> mergeSort(list: List<T>): List<T> {
     if (list.size <= 1) {

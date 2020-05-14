@@ -1,4 +1,4 @@
-package sort
+package com.d04nhtu.sort
 
 fun <T : Comparable<T>> bubbleSort(array: Array<T>) {
     val n = array.size - 1

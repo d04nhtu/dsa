@@ -1,4 +1,4 @@
-package sort
+package com.d04nhtu.sort
 
 fun <T : Comparable<T>> quickSort(array: Array<T>) {
     quickSortHelper(array, 0, array.size - 1)

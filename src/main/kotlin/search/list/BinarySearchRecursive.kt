@@ -14,7 +14,12 @@ fun <T : Comparable<T>> binarySearchRecursiveHelper(array: Array<T>, key: T, low
 
         when {
             comparedResult == 0 -> mid
-            comparedResult > 0 -> binarySearchRecursiveHelper(array, key, low, mid - 1)
+            comparedResult > 0 -> binarySearchRecursiveHelper(
+                array,
+                key,
+                low,
+                mid - 1
+            )
             else -> binarySearchRecursiveHelper(array, key, mid + 1, high)
         }
     }
