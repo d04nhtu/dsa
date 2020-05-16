@@ -61,9 +61,17 @@ internal class SinglyLinkedListTest {
         singlyLinkedList.append(2)
         singlyLinkedList.append(3)
 
-        val value = singlyLinkedList.pop()
-        assert(value == 1)
+        val value1 = singlyLinkedList.pop()
+        assert(value1 == 1)
         assert(singlyLinkedList.head?.value == 2)
+
+        val value2 = singlyLinkedList.pop()
+        assert(value2 == 2)
+        assert(singlyLinkedList.head?.value == 3)
+
+        val value3 = singlyLinkedList.pop()
+        assert(value3 == 3)
+        assert(singlyLinkedList.head?.value == null)
     }
 
     @Test

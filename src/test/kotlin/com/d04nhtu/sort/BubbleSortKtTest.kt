@@ -1,4 +1,4 @@
-package sort
+package com.d04nhtu.sort
 
 import com.d04nhtu.sort.bubbleSort
 import org.junit.jupiter.api.Assertions.assertArrayEquals

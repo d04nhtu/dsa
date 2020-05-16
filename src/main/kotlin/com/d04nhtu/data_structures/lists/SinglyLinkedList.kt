@@ -8,9 +8,9 @@ class SinglyLinkedList<T : Comparable<T>>(var head: Node<T>? = null) {
         if (head == null) {
             head = Node(value)
         } else {
-            val previousHead = head
+            val oldHead = head
             head = Node(value)
-            head!!.next = previousHead
+            head!!.next = oldHead
         }
     }
 
@@ -49,6 +49,7 @@ class SinglyLinkedList<T : Comparable<T>>(var head: Node<T>? = null) {
                 } else {
                     previousNode.next = node.next
                 }
+                break
             }
 
             previousNode = node
@@ -64,7 +65,7 @@ class SinglyLinkedList<T : Comparable<T>>(var head: Node<T>? = null) {
 
 
     fun insert(value: T, position: Int) {
-        if (position == 0) {
+        if (position <= 0) {
             prepend(value)
             return
         }

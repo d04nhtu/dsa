@@ -1,6 +1,5 @@
-package sort
+package com.d04nhtu.sort
 
-import com.d04nhtu.sort.mergeSort
 import org.junit.jupiter.api.Assertions.assertArrayEquals
 import org.junit.jupiter.api.Test
 

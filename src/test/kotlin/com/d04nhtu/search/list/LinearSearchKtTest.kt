@@ -1,4 +1,4 @@
-package search.list
+package com.d04nhtu.search.list
 
 import search.list.binarySearchRecursive
 import org.junit.jupiter.api.Test
