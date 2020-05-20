@@ -4,8 +4,9 @@ import com.d04nhtu.data_structures.lists.Node
 
 
 class StackByLinkedList<T : Comparable<T>>() {
+
+    private var head: Node<T>? = null
     private var numElements: Int = 0
-    var head: Node<T>? = null
 
     fun push(value: T) {
         val newNode = Node(value)

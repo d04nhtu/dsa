@@ -37,7 +37,7 @@ class QueueByLinkedList<T : Comparable<T>>() {
         return head?.value
     }
 
-    fun peakTail(): T?{
+    fun peekTail(): T?{
         return tail?.value
     }
 

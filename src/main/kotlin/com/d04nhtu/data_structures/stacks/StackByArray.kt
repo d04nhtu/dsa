@@ -2,9 +2,9 @@ package com.d04nhtu.data_structures.stacks
 
 class StackByArray(var initialSize: Int = 10) {
 
+    private var arr = IntArray(initialSize)
     private var nextIndex: Int = 0
     private var numElements: Int = 0
-    private var arr = Array(initialSize) { 0 }
 
     fun push(value: Int) {
         if (nextIndex == arr.size) {
@@ -41,7 +41,7 @@ class StackByArray(var initialSize: Int = 10) {
 
     private fun handleStackCapacityFull() {
         val oldArr = arr
-        arr = Array(oldArr.size * 2) { 0 }
+        arr = IntArray(oldArr.size * 2)
 
         for ((index, value) in oldArr.withIndex()) {
             arr[index] = value
