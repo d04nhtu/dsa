@@ -1,6 +1,5 @@
 package com.d04nhtu.data_structures.queues
 
-import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
 internal class QueueByLinkedListTest {

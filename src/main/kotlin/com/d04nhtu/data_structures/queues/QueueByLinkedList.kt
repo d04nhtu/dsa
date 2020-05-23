@@ -2,7 +2,7 @@ package com.d04nhtu.data_structures.queues
 
 import com.d04nhtu.data_structures.lists.Node
 
-class QueueByLinkedList<T : Comparable<T>>() {
+class QueueByLinkedList<T : Comparable<T>> {
 
     private var head: Node<T>? = null
     private var tail: Node<T>? = null
@@ -37,7 +37,7 @@ class QueueByLinkedList<T : Comparable<T>>() {
         return head?.value
     }
 
-    fun peekTail(): T?{
+    fun peekTail(): T? {
         return tail?.value
     }
 
