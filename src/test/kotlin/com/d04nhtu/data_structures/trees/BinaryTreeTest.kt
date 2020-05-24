@@ -16,19 +16,9 @@ internal class BinaryTreeTest {
 
         print("$tree\n\n")
 
-        val breadthFirstTraversal=tree.breadthFirstTraversal()
-
-//        expect: [D, B, E, A, C, F]
-        print("breadthFirstTraversal: ${breadthFirstTraversal}\n\n")
-
-//        expect: [D, B, A, C, E, F]
-        print("preOrderTraversal: ${tree.preOrderTraversal()}\n\n")
-
-//        expect: [A, B, C, D, E, F]
-        print("inOrderTraversal: ${tree.inOrderTraversal()}\n\n")
-
-//        expect: [A, C, B, F, E, D]
-        print("postOrderTraversal: ${tree.postOrderTraversal()}")
-
+        assert(tree.breadthFirstTraversal().toString() == "[D, B, E, A, C, F]")
+        assert(tree.preOrderTraversal().toString() == "[D, B, A, C, E, F]")
+        assert(tree.inOrderTraversal().toString() == "[A, B, C, D, E, F]")
+        assert(tree.postOrderTraversal().toString() == "[A, C, B, F, E, D]")
     }
 }
