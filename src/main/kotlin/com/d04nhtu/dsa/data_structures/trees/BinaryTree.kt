@@ -1,7 +1,7 @@
 package com.d04nhtu.dsa.data_structures.trees
 
 class TreeNode<T : Comparable<T>>(
-    var value: Comparable<T>?,
+    var value: T,
     var left: TreeNode<T>? = null,
     var right: TreeNode<T>? = null
 ) {
@@ -100,19 +100,20 @@ class BinaryTree<T : Comparable<T>>(value: T) {
     @ExperimentalStdlibApi
     override fun toString(): String {
         var level = 0
-        val queue = ArrayDeque<Pair<TreeNode<T>, Int>>()
+        val queue = ArrayDeque<Pair<TreeNode<T>?, Int>>()
         val visitOrder = ArrayList<Pair<String, Int>>()
         var node = root
         queue.addLast(Pair(node, level))
 
         while (queue.size > 0) {
             val removedNode = queue.removeFirst()
-            node = removedNode.first
             level = removedNode.second
 
-            if (node.value == null) {
+            if (removedNode.first == null) {
                 visitOrder.add(Pair("<empty>", level))
                 continue
+            } else {
+                node = removedNode.first!!
             }
 
             visitOrder.add(Pair(node.value.toString(), level))
@@ -120,13 +121,13 @@ class BinaryTree<T : Comparable<T>>(value: T) {
             if (node.left != null) {
                 queue.addLast(Pair(node.left!!, level + 1))
             } else {
-                queue.addLast(Pair(TreeNode(null), level + 1))
+                queue.addLast(Pair(null, level + 1))
             }
 
             if (node.right != null) {
                 queue.addLast(Pair(node.right!!, level + 1))
             } else {
-                queue.addLast(Pair(TreeNode(null), level + 1))
+                queue.addLast(Pair(null, level + 1))
             }
         }
         val builder = StringBuilder()

@@ -14,7 +14,7 @@ class BinarySearchTree<T : Comparable<T>>(var root: TreeNode<T>? = null) {
         while (true) {
             if (node!!.value == newNode.value) {
                 break
-            } else if (node.value!! > newNode.value as T) {
+            } else if (node.value > newNode.value) {
                 if (node.left != null) {
                     node = node.left
                 } else {
@@ -47,7 +47,7 @@ class BinarySearchTree<T : Comparable<T>>(var root: TreeNode<T>? = null) {
 
         return if (currentNode.value == newNode.value) {
             true
-        } else if (currentNode.value!! > newNode.value as T) {
+        } else if (currentNode.value > newNode.value as T) {
             if (currentNode.left != null) {
                 searchRec(currentNode.left!!, value)
             } else {
@@ -97,19 +97,7 @@ class BinarySearchTree<T : Comparable<T>>(var root: TreeNode<T>? = null) {
         return currentNode
     }
 
-    fun minValueNode(_currentNode: TreeNode<T>): Comparable<T>? {
-        var currentNode = _currentNode
-        var minValue = currentNode.value
-
-        while (currentNode.left != null) {
-            minValue = currentNode.left!!.value
-            currentNode = currentNode.left!!
-        }
-
-        return minValue
-    }
-
-    private fun minValue(_currentTreeNode: TreeNode<T>): Comparable<T>? {
+    private fun minValue(_currentTreeNode: TreeNode<T>): T {
         var currentNode = _currentTreeNode
         var minValue = currentNode.value
         while (currentNode.left != null) {
