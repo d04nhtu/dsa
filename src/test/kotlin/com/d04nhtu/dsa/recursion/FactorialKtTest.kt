@@ -2,8 +2,6 @@ package com.d04nhtu.dsa.recursion
 
 import org.junit.jupiter.api.Test
 
-import com.d04nhtu.dsa.recursion.factorial
-
 internal class FactorialKtTest {
 
     @Test
