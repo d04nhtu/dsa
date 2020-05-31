@@ -1,4 +1,4 @@
-package com.d04nhtu.dsa.list
+package com.d04nhtu.dsa.search.list
 
 import com.d04nhtu.dsa.search.list.binarySearchRecursive
 import org.junit.jupiter.api.Test
