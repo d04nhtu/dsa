@@ -1,7 +1,7 @@
 package com.d04nhtu.dsa.search.graph
 
 class GraphNode<T : Comparable<T>>(var value: T) : Comparable<GraphNode<T>> {
-    var children = mutableListOf<GraphNode<T>>()
+    val children = mutableListOf<GraphNode<T>>()
 
     fun addChild(newNode: GraphNode<T>) {
         children.add(newNode)
