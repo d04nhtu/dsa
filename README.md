@@ -1,4 +1,5 @@
-# The Data Structures and Algorithms - Kotlin (for learning purposes)
+# Data Structures & Algorithms - Kotlin
+A collection of data structures and algorithms is implemented in Kotlin for leanring purposes.
 
 ## DataStructures
   * Heaps
@@ -40,7 +41,6 @@
     * [BreadthFirstSearch](https://github.com/d04nhtu/kotlin_dsa/blob/master/src/main/kotlin/com/d04nhtu/dsa/search/graph/BreadthFirstSearch.kt)
     * [DepthFirstSearch](https://github.com/d04nhtu/kotlin_dsa/blob/master/src/main/kotlin/com/d04nhtu/dsa/search/graph/DepthFirstSearch.kt)
     * [Graph](https://github.com/d04nhtu/kotlin_dsa/blob/master/src/main/kotlin/com/d04nhtu/dsa/search/graph/Graph.kt)
-  
   * List
     * [BinarySearchIterative](https://github.com/d04nhtu/kotlin_dsa/blob/master/src/main/kotlin/com/d04nhtu/dsa/search/list/BinarySearchIterative.kt)
     * [BinarySearchRecursive](https://github.com/d04nhtu/kotlin_dsa/blob/master/src/main/kotlin/com/d04nhtu/dsa/search/list/BinarySearchRecursive.kt)
